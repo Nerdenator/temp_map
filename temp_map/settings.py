@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'temp_dashboard.apps.TempDashboardConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
