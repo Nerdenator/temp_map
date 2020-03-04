@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'temp_dashboard.apps.TempDashboardConfig',
+    'temp_api.apps.TempApiConfig',
     'rest_framework'
 ]
 

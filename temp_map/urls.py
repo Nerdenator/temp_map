@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import include, path
 
 import temp_dashboard
+import temp_api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dashboard/', include('temp_dashboard.urls'))
+    path('dashboard/', include('temp_dashboard.urls')),
+    path('', include('temp_api.urls'))
 ]

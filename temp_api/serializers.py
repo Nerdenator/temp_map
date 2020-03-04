@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Temperature, Sensor
+from temp_dashboard.models import Temperature, Sensor
 
 
 class TemperatureSerializer(serializers.ModelSerializer):
