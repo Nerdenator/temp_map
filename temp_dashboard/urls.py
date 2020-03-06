@@ -4,4 +4,5 @@ from temp_dashboard import views
 # Create a router and register our viewsets with it.
 
 urlpatterns = [
+    path('', views.dashboard, name='dashboard')
 ]

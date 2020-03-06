@@ -5,4 +5,4 @@ from temp_dashboard.models import Temperature, Sensor
 class TemperatureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Temperature
-        fields = ['id', 'sensor', 'time', 'fahrenheit', 'celsius']
+        fields = ['id', 'sensor', 'time', 'celsius']
