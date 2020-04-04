@@ -1,13 +1,11 @@
-from django.urls import path, include
-
-from rest_framework.routers import DefaultRouter
-from .views import TemperatureViewSet
-
-router = DefaultRouter()
-
-router.register('api', TemperatureViewSet)
+from django.urls import path
+from rest_framework.urlpatterns import format_suffix_patterns
+from temp_api import views
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('dashboard', include('temp_dashboard.urls'))
+    path('temperatures/', views.temperature_list),
+    path('temperatures/<int:sensor_id>', views.temperature_latest),
+    path('sensors/', views.sensor_list)
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
