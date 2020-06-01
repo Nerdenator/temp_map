@@ -11,7 +11,75 @@
 <div class="container">
     <h1>Home Temperature Dashboard</h1>
     <hr/>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                Temp 1
+            </div>
+            <div class="col-lg-4">
+                Temp 2
+            </div>
+            <div class="col-lg-4">
+                Temp 3
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="temp1Detail">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#temp1DetailCard"
+                                        aria-expanded="true" aria-controls="temp1DetailCard">
+                                    Temp 1 Detail
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="temp1DetailCard" class="collapse show" aria-labelledby="temp1Detail"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                table or graph or something here.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="temp2Detail">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#temp2DetailCard" aria-expanded="false"
+                                        aria-controls="temp2DetailCard">
+                                    Temp 2 Detail
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="temp2DetailCard" class="collapse" aria-labelledby="temp2Detail"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                table or graph or something here
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="temp3Detail">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#temp3DetailCard" aria-expanded="false"
+                                        aria-controls="temp3DetailCard">
+                                    Temp 3 Detail
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="temp3DetailCard" class="collapse" aria-labelledby="temp3Detail"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                table or graph or something here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
