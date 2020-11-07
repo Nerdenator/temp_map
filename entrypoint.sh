@@ -12,8 +12,8 @@ then
 fi
 
 python manage.py flush --no-input
-python manage.py migrate
+python manage.py migrate --no-input
 
-django-admin createsuperuser --noinput
+python manage.py createsuperuser --no-input --email a.mcruer@yopmail.com
 
 exec "$@"
