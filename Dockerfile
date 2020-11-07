@@ -10,7 +10,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apk update \
-    && apk add python3-dev
+    && apk add gcc musl-dev postgresql-dev python3-dev
 
 # install dependency
 RUN pip install --upgrade pip
