@@ -23,5 +23,5 @@ services:
       - POSTGRES_PASSWORD=temperature123
       - POSTGRES_USER=dbuser
 
-  volumes:
-    postgres_data:
+volumes:
+  postgres_data:
